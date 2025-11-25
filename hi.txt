@@ -1,0 +1,13 @@
+libraries:
+- tailwindcss
+
+packages:
+- lucide-react
+    access to icons
+- react-router-dom
+    for routing to main page and to 404 page
+- tailwind-merge
+    to combine classnames in tailwind so you dont hve to keep worrying about writing entire classname in one line
+
+toaster library:
+- @radix-ui/react-toast class-variance-authority clsx
