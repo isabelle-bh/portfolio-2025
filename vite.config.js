@@ -3,15 +3,12 @@ import react from '@vitejs/plugin-react'
 import tailwindcss from "@tailwindcss/vite"
 import path from "path"
 
-// https://vite.dev/config/
-export default defineConfig({
+export default defineConfig(({ mode }) => ({
   plugins: [react(), tailwindcss()],
-  base: '/portfolio-2025/',
-  // alias for source folder:
+  base: mode === 'production' ? '/portfolio-2025/' : '/',
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
-    }
-  }
-})
-
+    },
+  },
+}))
