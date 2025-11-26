@@ -1,13 +1,14 @@
 {
   "name": "portfolio-2025",
+  "homepage": "https://isabelle-bh.github.io/portfolio-2025/",
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://isabelle-bh.github.io/portfolio-2025",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
+    "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {

@@ -5,7 +5,7 @@ import path from "path"
 
 export default defineConfig(({ mode }) => ({
   plugins: [react(), tailwindcss()],
-  base: mode === 'production' ? '/portfolio-2025/' : '/',
+  base: mode === 'production' ? '/portfolio-2025' : '/',
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
