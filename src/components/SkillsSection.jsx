@@ -6,46 +6,46 @@ const webSkills = [
     {name: "JavaScript", level: 90, category: "frontend"},
     {name: "React", level: 90, category: "frontend"},
     {name: "Tailwind CSS", level: 90, category: "frontend"},
-    {name: "Vite", level: 85, category: "frontend"},
-    {name: "Bootstrap", level: 85, category: "frontend"},
+    {name: "Bootstrap", level: 80, category: "frontend"},
 
-    {name: "Node.js", level: 80, category: "backend"},
-    {name: "Express", level: 75, category: "backend"},
-    {name: "MongoDB", level: 90, category: "backend"},
+    {name: "Node.js", level: 75, category: "backend"},
+    {name: "Express", level: 70, category: "backend"},
+    {name: "MongoDB", level: 80, category: "backend"},
 
     {name: "Git/GitHub", level: 95, category: "tools"},
-    {name: "Jira/Atlassian Suite", level: 80, category: "tools"},
+    {name: "Jira/Atlassian Suite", level: 75, category: "tools"},
     {name: "VS Code", level: 95, category: "tools"},
-    {name: "AWS", level: 85, category: "tools"},
+    {name: "AWS", level: 80, category: "tools"},
 ]
 
-const categories = ["all", "frontend", "backend", "tools"];
+const categories = ["all", "languages", "frameworks/libraries", "tools"];
 
 const generalSkills = [
+    {name: "JavaScript", level: 90, category: "languages"},
     {name: "HTML/CSS", level: 95, category: "languages"},
-    {name: "JavaScript", level: 90, category: "frontend"},
-    {name: "React", level: 90, category: "frontend"},
-    {name: "Tailwind CSS", level: 90, category: "frontend"},
-    {name: "Vite", level: 85, category: "frontend"},
-    {name: "Bootstrap", level: 85, category: "frontend"},
+    {name: "Python", level: 90, category: "languages"},
+    {name: "C#", level: 80, category: "languages"},
+    {name: "Liquid/PHP", level: 80, category: "languages"},
+    {name: "Swift", level: 70, category: "languages"},
 
-    {name: "Node.js", level: 80, category: "frameworks/libraries"},
-    {name: "Express", level: 75, category: "frameworks/libraries"},
-    {name: "MongoDB", level: 90, category: "frameworks/libraries"},
+    {name: "React", level: 90, category: "frameworks/libraries"},
+    {name: "Tailwind CSS", level: 90, category: "frameworks/libraries"},
+    {name: "Bootstrap", level: 80, category: "frameworks/libraries"},
+    {name: "Node.js", level: 75, category: "frameworks/libraries"},
+    {name: "Express", level: 70, category: "frameworks/libraries"},
 
     {name: "Git/GitHub", level: 95, category: "tools"},
     {name: "VS Code", level: 95, category: "tools"},
-    {name: "AWS", level: 85, category: "tools"},
-    {name: "GCP", level: 85, category: "tools"},
-    {name: "Docker", level: 85, category: "tools"},
-    {name: "Jira/Atlassian Suite", level: 80, category: "tools"},
+    {name: "MongoDB", level: 80, category: "tools"},
+    {name: "AWS", level: 80, category: "tools"},
+    {name: "Jira/Atlassian Suite", level: 75, category: "tools"},
 
 ]
 
 export const SkillsSection = () => {
     const [activeCategory, setActiveCategory] = useState("all");
 
-    const filteredSkills = webSkills.filter(
+    const filteredSkills = generalSkills.filter(
         (skill) => activeCategory === "all" || skill.category === activeCategory
     );
 
