@@ -1,4 +1,6 @@
 import { User, Briefcase, Code } from "lucide-react"
+import myResume from "/Beaudry_Isabelle_Resume_nov25.pdf"
+
 export const AboutSection = () => {
     return (
         <section id="about" className="py-24 px-4 relative">
@@ -9,14 +11,19 @@ export const AboutSection = () => {
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
                     <div className="space-y-6">
-                        <h3 className="text-2xl font-semibold">Passionate Web Developer & Web Designer</h3>
-                        <p className="text-muted-foreground">hi hi hi</p>
-                        <p>im the coolest</p>
+                        <h3 className="text-2xl font-semibold">New Graduate Software Engineer</h3>
+                        <p className="text-muted-foreground">
+                            I have worked on projects in many different areas of software engineering, 
+                            including full stack web development, game development, iOS app development, 
+                            machine learning and autonomous systems, and more.
+                        </p>
+                        <p>Some of my passions include Formula 1, drawing, reading, yoga, video games, and spending time with friends / family!
+                        </p>
                         <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center">
-                            <a href="contact" className="cosmic-button">
+                            <a href="#contact" className="cosmic-button">
                                 Get in Touch
                             </a>
-                            <a href="contact" className="px-6 py-2 rounded-full border border-primary text-primary hover:bg-primary-10 transition-colors duration-300">
+                            <a href={myResume} target="_blank" rel="noopener noreferrer" className="px-6 py-2 rounded-full border border-primary text-primary hover:bg-primary-10 transition-colors duration-300">
                                 Download CV
                             </a>
                         </div>
@@ -28,9 +35,9 @@ export const AboutSection = () => {
                                     <Code className="h-6 w-6 text-primary"></Code>
                                 </div>
                                 <div className="text-left">
-                                    <h4 className="font-semibold text-lg">Web Development</h4>
+                                    <h4 className="font-semibold text-lg">Web Design</h4>
                                     <p className="text-muted-foreground">
-                                        somethin
+                                        I have a passion for frontend web dev. I appreciate not only the coding but also the design aspect; the more I practise, the more beautiful and responsive my websites become!
                                     </p>
                                 </div>
                             </div>
@@ -41,9 +48,9 @@ export const AboutSection = () => {
                                     <User className="h-6 w-6 text-primary"></User>
                                 </div>
                                 <div className="text-left">
-                                    <h4 className="font-semibold text-lg">UI/UX Design</h4>
+                                    <h4 className="font-semibold text-lg">Game Development</h4>
                                     <p className="text-muted-foreground">
-                                        user experience stuff
+                                        I've built numerous mini games, including a 2D Platformer, a Top-Down, and a 3D Idler, all using my favourite game engine, Unity.
                                     </p>
                                 </div>
                             </div>
@@ -56,7 +63,7 @@ export const AboutSection = () => {
                                 <div className="text-left">
                                     <h4 className="font-semibold text-lg">Work Experience</h4>
                                     <p className="text-muted-foreground">
-                                        hi
+                                        I currently work as a web developer at a small company, and I am simultaneously volunteering for Toronto Climate Week as a web developer.
                                     </p>
                                 </div>
                             </div>
