@@ -1,5 +1,5 @@
 import { User, Briefcase, Code } from "lucide-react"
-import myResume from "/Beaudry_Isabelle_Resume_nov25.pdf"
+import myResume from "/Isabelle_Beaudry_Resume_web.pdf"
 
 export const AboutSection = () => {
     return (
