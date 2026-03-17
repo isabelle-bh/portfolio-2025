@@ -70,19 +70,19 @@
     
     --card: 0 0% 100%;
 
-    --primary: 250 47% 60%;
+    --primary: 333, 98%, 35%;
     --primary-foreground: 210 40% 98%;
 
     --border: 214 32% 91%;
   }
 
   .dark {
-    --background: 222 47% 4%;
+    --background: 315.9 76.61% 6.81%;
     --foreground: 213 31% 91%;
     
-    --card: 222 47% 8%;
+    --card: 327.67deg 75.12% 12.44%;
 
-    --primary: 250 65% 65%;
+    --primary: 333, 98%, 35%;
     --primary-foreground: 213 31% 91%;
 
     --border: 217 33% 20%;
@@ -153,7 +153,7 @@
 
 @utility meteor {
   @apply absolute bg-linear-to-r from-white via-white to-transparent rounded-full;
-  box-shadow: 0 0 10px 5px rgba(255,255,255,0.3);
+  box-shadow: 0 0 50px 5px rgba(255,255,255,0.3);
 }
 
 #root {
